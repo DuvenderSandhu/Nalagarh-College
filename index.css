@@ -1,0 +1,189 @@
+/* Utilitize Classes */
+.btns{
+    margin: 10px;
+    display: flex;
+    align-items: center;
+
+}
+.btn{
+    color: white;
+    background-color: #ad750a;
+    padding: 10px;
+    border:1px solid #ad750a;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.btn:hover{
+    color: #ad750a;
+    background-color: #fff;
+}
+
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+.contactheader{
+    display: flex;
+    justify-content: center;
+    background-color: #ad750a;
+
+    color: white;
+    padding: 0.5rem 3rem ;
+    
+}
+.phone{
+    margin: 0px 2rem ;
+}
+.email{
+    margin: 0px 2rem ;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem 5rem;
+    /* background-color: blue; */
+    position: sticky;
+    top: 0px;
+    background-color: white;
+    animation-name: stickynav;
+    animation-duration: 1s;
+
+}
+
+@keyframes stickynav {
+    from{background-color: white;}
+    to{background-color: rgb(143, 136, 136);}
+}
+.logo{
+    color: rgb(93, 136, 153);
+    font-size: 1.5rem;
+    text-align: center;
+}
+.nav ul{
+    display: flex;
+    list-style: none;
+}
+.nav ul li{
+    margin: 0.5rem;
+    padding: 0.7rem;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 0px;
+    font-size: 1.1rem;
+    color: gray;
+    /* background-color: white; */
+}
+@keyframes nav {
+    from{
+        color: gray;
+        background-color: white;
+    border-radius: 0px;
+
+    }
+    to{
+        color: white;
+        background-color: #ad750a;
+    border-radius: 5px;
+
+    }
+}
+.nav ul li:hover{
+    animation-name: nav;
+    animation-duration: 1s;
+    
+}
+.nav .ham hr{
+    background-color: black;
+    width: 30px;
+    height: 2px;
+    margin: 5px;
+}
+.sideBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(images/university2.jpg);
+    height: 100vh;
+    width: 30vw;
+    position: fixed;
+    top: 0px;
+    left: -25rem;
+}
+.sideBar .logo{
+    background-color: white;
+    width: 100%;
+}
+.ham{
+    cursor: pointer;
+}
+/*                  Main*/
+
+.main::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 82.5vh;
+    background: url(images/university.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+    opacity: 0.9;
+}
+.main{
+    height: 82.5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.main h1{
+    font-size: 3rem;
+}
+
+.heading{
+    font-size: 2rem;
+    text-decoration: underline;
+    /* color: blue; */
+    font-weight: 700;
+}
+
+
+
+
+/*                       About Section  */
+.outerAbout{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about{
+    display: flex;
+    justify-content: space-around;
+    margin: 2rem auto;
+    /* background-color: skyblue; */
+    width: 80%;
+}
+.aboutLeft{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+    overflow: hidden;
+
+}
+.aboutLeft img{
+    width: 100%;
+}
+.aboutRight{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.aboutRight p{
+    margin-top: 15px;
+    text-align: justify;
+}
