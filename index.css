@@ -6,6 +6,11 @@
     align-items: center;
 
 }
+.alert{
+    color: red;
+    font-size: 0.7rem;
+    display: none;
+}
 .btn{
     color: white;
     background-color: #ad750a;
@@ -119,7 +124,7 @@ margin: 1rem 0px ;
     width: 30vw;
     position: fixed;
     top: 0px;
-    left: -25rem;
+    left: -35%;
     /* border-radius: 5%; */
     transition: left;
     transition-duration: 0.5s;
@@ -212,7 +217,26 @@ margin: 1rem 0px ;
     color: black;
     text-align: justify;
 }
-
+/*                          Notificaions */
+.notifications{
+    width: 60%;
+    margin: 0px auto;
+    padding: 5rem;
+}
+.notificationSection{
+    border: 2px solid black;
+    height: 40vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+width: 70%;
+margin: 1rem auto;
+}
+.notification{
+    cursor: pointer;
+    margin: 15px 0px;
+    text-align: center;
+}
 
 
 /*                      Course Section */
@@ -220,7 +244,8 @@ margin: 1rem 0px ;
     display: flex;
     width: 90%;
     justify-content: space-around;
-    margin: 5rem auto;
+    margin:  auto;
+    padding: 5rem
 
 }
 .courses{
@@ -300,6 +325,36 @@ width: 65%;
 .form marquee{
     color:#141420;
 }
+
+/*                      Media Section */
+.media{
+    width: 80%;
+    margin: auto;
+    padding: 5px auto;
+}
+.pics{
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+.picbox{
+    border: 2px solid black;
+    height: 200px;
+    overflow: none;
+    width: 200px;
+    margin: 10px;
+    overflow: none;
+}
+.picbox img{
+    /* margin: 10px; */
+    height: 200px;
+    width: 200px;
+    transform:scale(1);
+}
+
+/*                  Footer */
 .extra{
     margin: 2rem auto;
     margin-bottom: 0;
@@ -328,4 +383,7 @@ width: 65%;
 .footer{
     display: flex;
     justify-content: space-around;
+}
+.fh{
+    margin-bottom: 1rem;
 }
